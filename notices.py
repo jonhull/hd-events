@@ -74,7 +74,7 @@ events@hackerdojo.com
              
 def notify_owner_confirmation(event):
     mail.send_mail(sender=FROM_ADDRESS, to=event.member.email(),
-        subject="[New Event] Submitted but **not yet approved**",
+        subject="[New/edited Event] Submitted but **not yet approved**",
         body="""This is a confirmation that your event:
 
 %s
